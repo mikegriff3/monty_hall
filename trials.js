@@ -30,4 +30,26 @@ for (var i = 0; i < simulations; i++) {
   }
 }
 
-console.log(switchWins);
+console.log(
+  "Out of 10,000 simulations, switching doors won " +
+    switchWins +
+    " times or " +
+    (switchWins / simulations * 100).toFixed(2) +
+    "% of the time"
+);
+
+// Creating a pie chart w/ Plotly
+// var data = [
+//   {
+//     values: [switchWins, simulations - switchWins],
+//     labels: ["Switch Wins", "No Switch Wins"],
+//     type: "pie"
+//   }
+// ];
+
+// var layout = {
+//   height: 600,
+//   width: 700
+// };
+
+// Plotly.newPlot("myDiv", data, layout);
